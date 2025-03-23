@@ -1,4 +1,250 @@
 {
-    "altitude": "sim/cockpit2/gauges/indicators/altitude_ft_pilot"
-  }
+  "flap_status":
+  {
+    "ref": "sim/cockpit2/controls/flap_handle_deploy_ratio",
+    "type": "float",
+    "writable": false
+  },
+
+  "gear_status":
+  {
+    "ref": "sim/flightmodel/movingparts/gear3def",
+    "type": "float",
+    "writable": false
+  },
+
+  "egt":
+  {
+    "ref": "simcoders/rep/cockpit2/gauges/indicators/engine_0_egt",
+    "type": "float",
+    "writable": false
+  },
+
+  "oil_t":
+  {
+    "ref": "simcoders/rep/cockpit2/gauges/indicators/oil_temp_f_0",
+    "type": "float",
+    "writable": false
+  },
+
+  "fuel_l":
+  {
+    "ref": "sim/cockpit2/fuel/fuel_level_indicated_left // kg",
+    "type": "float",
+    "writable": false
+  },
+
+  "cht":
+  {
+    "ref": "simcoders/rep/cockpit2/gauges/indicators/cht_f_0",
+    "type": "float",
+    "writable": false
+  },
+
+  "fuel_r":
+  {
+    "ref": "sim/cockpit2/fuel/fuel_level_indicated_right // kg",
+    "type": "float",
+    "writable": false
+  },
+
+
+
+  "hdg_actual":
+  {
+    "ref": "sim/cockpit2/gauges/indicators/heading_electric_deg_mag_pilot",
+    "type": "float",
+    "writable": true
+  },
+
+  "hdg_set":
+  {
+    "ref": "sim/cockpit/autopilot/heading_mag",
+    "type": "float",
+    "writable": true
+  },
+
+  "hdg_dn":
+  {
+    "ref": "sim/autopilot/heading_down",
+    "type": "int",
+    "writable": true
+  },
+
+  "hdg_up":
+  {
+    "ref": "sim/autopilot/heading_up",
+    "type": "int",
+    "writable": true
+  },
+
+  "hdg_sync":
+  {
+    "ref": "sim/autopilot/heading_sync",
+    "type": "int",
+    "writable": true
+  },
+
+  "crs_set":
+  {
+    "ref": "sim/cockpit/radios/nav1_obs_degm",
+    "type": "float",
+    "writable": true
+  },
+
+  "crs_dn":
+  {
+    "ref": "sim/radios/obs1_down",
+    "type": "float",
+    "writable": true
+  },
+
+  "crs_up":
+  {
+    "ref": "sim/radios/obs1_up",
+    "type": "float",
+    "writable": true
+  },
+
+  "alt_actual":
+  {
+    "ref": "sim/cockpit2/gauges/indicators/altitude_ft_pilot",
+    "type": "float",
+    "writable": true
+  },
+
+  "alt_set":
+  {
+    "ref": "sim/cockpit/autopilot/altitude",
+    "type": "float",
+    "writable": true
+  },
+
+  "baro_actual":
+  {
+    "ref": "sim/cockpit/misc/barometer_setting",
+    "type": "float",
+    "writable": true
+  },
+
+  "baro_dn":
+  {
+    "ref": "sim/instruments/barometer_down",
+    "type": "float",
+    "writable": true
+  },
   
+  "baro_up":
+  {
+    "ref": "sim/instruments/barometer_up",
+    "type": "float",
+    "writable": true
+  },
+
+  "baro_std":
+  {
+    "ref": "sim/instruments/barometer_2992",
+    "type": "float",
+    "writable": true
+  },
+
+  "vs_set":
+  {
+    "ref": "sim/cockpit/autopilot/vertical_velocity",
+    "type": "float",
+    "writable": true
+  },
+
+  "vs_dn":
+  {
+    "ref": "sim/autopilot/vertical_speed_down",
+    "type": "int",
+    "writable": true
+  },
+
+  "vs_up":
+  {
+    "ref": "sim/autopilot/vertical_speed_up",
+    "type": "int",
+    "writable": true
+  },
+
+  "ias_set":
+  {
+    "ref": "sim/cockpit/autopilot/airspeed",
+    "type": "float",
+    "writable": true
+  },
+
+  "ias_dn":
+  {
+    "ref": "sim/autopilot/airspeed_down",
+    "type": "int",
+    "writable": true
+  },
+
+  "ias_up":
+  {
+    "ref": "sim/autopilot/airspeed_up",
+    "type": "int",
+    "writable": true
+  },
+
+
+
+  "ap_mode":
+  {
+    "ref": "sim/autopilot/servos_toggle",
+    "type": "int",
+    "writable": true
+  },
+
+  "hdg_mode":
+  {
+    "ref": "sim/autopilot/heading",
+    "type": "int",
+    "writable": true
+  },
+
+  "nav_mode":
+  {
+    "ref": "sim/autopilot/NAV",
+    "type": "int",
+    "writable": true
+  },
+
+  "apr_mode":
+  {
+    "ref": "sim/autopilot/approach",
+    "type": "int",
+    "writable": true
+  },
+
+  "ias_mode":
+  {
+    "ref": "sim/autopilot/level_change",
+    "type": "int",
+    "writable": true
+  },
+
+  "vs_mode":
+  {
+    "ref": "sim/autopilot/vertical_speed",
+    "type": "int",
+    "writable": true
+  },
+
+  "alt_mode":
+  {
+    "ref": "sim/autopilot/altitude_hold",
+    "type": "int",
+    "writable": true
+  },
+
+  "alt_mode_arm":
+  {
+    "ref": "sim/autopilot/altitude_arm",
+    "type": "int",
+    "writable": true
+  }
+}
